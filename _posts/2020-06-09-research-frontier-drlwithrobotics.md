@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Learning Diverse Goal-Conditioned Policies for Frontier Selection in Navigation "
-titleurl: http://vidhijain.github.io/drl_with_robotics.pdf
+titleurl: https://drive.google.com/file/d/1flDCmqoXfp-l1wN6iUkWDTFRnKa4PGKC/view
 date:   2020-03-09 22:21:59 +00:00
-image: images/sm_tmp.gif
+image: images/white_bg.png
 categories: project
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong> and Ganesh Iyer."

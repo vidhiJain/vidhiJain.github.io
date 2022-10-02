@@ -9,5 +9,8 @@ image: images/riLogo2019.svg
 categories: education
 author: "Vidhi Jain"
 advisor: Katia Sycara (social machine intelligence)
+advisorurl: https://www.ri.cmu.edu/ri-faculty/katia-sycara/
+thesis: Towards Explainable Embodied AI
+thesisurl: https://www.ri.cmu.edu/publications/towards-explainable-embodied-ai/
 ---
 

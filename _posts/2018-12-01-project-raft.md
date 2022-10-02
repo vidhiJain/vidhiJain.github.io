@@ -3,7 +3,7 @@ layout: post
 title:  "Implemented Distributed Consensus Protocol: Raft"
 titleurl: https://doi.org/10.1145/3027063.3048417
 date:   2017-06-09 22:21:59 +00:00
-image: images/sm_tmp.gif
+image: images/white_bg.png
 categories: project
 author: "Vidhi Jain"
 authors:  "<strong>Vidhi Jain</strong>, Abhishek Gupta and Supriya Agarwal."

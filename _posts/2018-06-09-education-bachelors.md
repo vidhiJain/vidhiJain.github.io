@@ -8,5 +8,8 @@ enddate: 2018-08-01 22:21:59 +00:00
 image: images/bitspilani.png
 categories: education
 author: "Vidhi Jain"
-advisor: Aaron Courville (deep generative models), Rahul Banerjee (computer networks)
+advisor: "Aaron Courville, Mila (offcampus thesis)"
+advisorurl: https://scholar.google.com/citations?user=km6CP8cAAAAJ&hl=en
+thesis: Investigating viability of generative models for out-of-distribution detection.
+thesisurl: pdfs/Bachelor_Thesis_VidhiJain.pdf
 ---

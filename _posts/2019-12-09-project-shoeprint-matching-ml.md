@@ -3,7 +3,7 @@ layout: post
 title:  " Towards Zero-Shot Alignment and Retrieval for Forensic Detection  "
 titleurl: http://vidhijain.github.io/drl_with_robotics.pdf
 date:   2019-12-09 22:21:59 +00:00
-image: images/sm_tmp.gif
+image: images/white_bg.png
 categories: project
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>, Amrit Setlur and Aditya Pratapa."

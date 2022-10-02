@@ -3,7 +3,7 @@ layout: post
 title:  "Empowering API Consumer Community: Collaborative Annotation of Web API Documentation for Semantically Structured Format"
 titleurl: https://goo.gl/IZ8ICq
 date:   2016-06-09 22:21:59 +00:00
-image: images/sm_tmp.gif
+image: images/white_bg.png
 categories: project
 author: "Vidhi Jain and Matthias Frank"
 authors: "Sajjad Gholami, Oliver Schulte, <strong>Vidhi Jain</strong>, Qiang Zhao."

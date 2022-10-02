@@ -46,6 +46,11 @@
                 (formerly FAIR) working with <a href="https://scholar.google.com/citations?user=H8FJlJoAAAAJ&hl=en">Akshara Rai</a> and <a href="https://scholar.google.com/citations?user=28oeBTgAAAAJ&hl=en">Yixin Lin</a>. 
                 <!-- I also worked as a <a href="https://www.microsoft.com/en-us/research/academic-program/research-fellows-program-at-microsoft-research-india/testimonials/">Research Fellow</a> at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research India</a>, advised by <a href="https://www.microsoft.com/en-us/research/people/amitdesh/">Amit Deshpande</a> and <a href="https://www.microsoft.com/en-us/research/people/navingo/">Navin Goyal</a>. -->
               </p>
+              <p>
+                I am interested in <strong>learning algorithms for high-level decision making</strong> in navigation, manipulation and dialogue. 
+                My <em>North Star</em> is to improve embodied AI and robots for assistance in everyday tasks.
+                For this, I study and develop deep learning and optimization at the intersection of <strong>robotics, language</strong> and <strong>vision</strong>.                
+              </p>
               <!-- <p>
                 I received a Masters in Robotics  from <a href="https://www.ri.cmu.edu/">CMU RI</a> working on on <a href="https://www.ri.cmu.edu/publications/towards-explainable-embodied-ai/">interpretable embodied AI</a> with <a href="https://www.ri.cmu.edu/ri-faculty/katia-sycara/">Katia Sycara</a>. 
                 I earned a Bachelors in Computer Science from <a href="https://www.bits-pilani.ac.in/">BITS Pilani</a>, where I worked in <a href="https://www.linkedin.com/in/rahulbanerjeebits/">Rahul Banerjee's</a> lab. 
@@ -68,20 +73,6 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
-              <!-- <ul>
-                <li>Our work on learning preferences for canonical dish loading task using 
-                  <a href="https://openreview.net/forum?id=Eal_lL08v_l">Transformers Task Planner</a> is accepted at <a href="https://corl2022.org/">CoRL 2022</a>. 
-                </li>
-                <li>
-                  I am serving as a reviewer for ICLR, ICML and NeurIPS.
-                </li>
-                <details>
-                  <summary>See More</summary>
-                  <li>
-                    <strong>Heidelberg Laureate Forum Scholar 2020</strong>: Selected among 224 young researchers to meet laureates in the mathematics and computer science (postponed to Sep 2021); Participated in Virtual Heidelberg Laureate Forum 2020
-                  </li>
-                </details>
-              </ul>   -->
             </td>
           </tr>
         </table>
@@ -105,7 +96,9 @@
         </table>
         <details>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <summary>See more.</summary>
+            <summary style="padding: 4px;width: 100%;background-color: #eeeeee;border: none;box-shadow: 1px 1px 2px #bbbbbb;cursor: pointer;">
+              <span style="text-align:center;"><em> Show more... </em></span>
+            </summary>
             {% for post in site.posts %}
             {% for cat in post.categories %}
             {% if cat == 'news' %}
@@ -131,16 +124,13 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I am interested in <strong>learning algorithms for high-level decision making</strong> in navigation, manipulation and dialogue. 
-                My <em>North Star</em> is to improve embodied AI and robots for assistance in everyday tasks.
-                For this, I study and develop deep learning and optimization at the intersection of <strong>robotics, language</strong> and <strong>vision</strong>.                
                 My research can be summarized into four scopes - 
                 understanding the goals and intentions of other agents, <!--(includes modeling human preferences), --> 
                 learning from data without extensive supervision, 
                 modeling spatio-temporal context for improved task-efficiency, 
                 and explaining the machine learning model's predictions. 
-              </p>
-              <p>Here is a list of my publications and presentations. The key papers are <span style="background-color: #ffffd0">highlighted</span>.</p>
+                Here is a list of my relevant research publications and presentations. 
+                The key papers are <span style="background-color: #ffffd0">highlighted</span>.</p>
             </td>
           </tr>
         </table>
@@ -209,7 +199,15 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Projects</h2>
-              <p> Here is a list of my academic projects. These include coursework, side projects and unpublished research work. 
+              <p> 
+                My broad focus is to incorporate the fundamental advancements of learning algorithms towards human-centric AI. 
+                But before deciding upon this goal, I explored other research areas such as 
+                <a href="">semantic web </a>, 
+                <a href="">software-defined networking</a>,  
+                and applications for  <a href="">social good</a>.
+                <!-- <a href="">mental health</a>, 
+                <a href="">visually challenged</a>.  -->
+                Here is a list of my academic projects. These include coursework, side projects and unpublished research work. 
               </p>
             </td>
           </tr>
@@ -223,11 +221,10 @@
             <!-- <td style="padding:2.5%;width:3%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td> -->
-            <td style="padding:2.5%;width:94%;vertical-align:middle">
+            <td style="padding:0% 2.5% .5% 2.5%;width:94%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              {{ post.date | date: "%Y" }}
-              <br>
-
+              {{ post.date | date: "%Y" }} &nbsp;&nbsp;
+              <br>|
               {% if post.pdf %}
               <a href="{{post.pdf}}">pdf</a> |
               {% endif %}
@@ -259,7 +256,7 @@
               <a href="{{post.poster}}">poster</a> |
               {% endif %}
               {% if post.bibtex %}
-              <a href="{{post.bibtex}}">bibTeX</a> 
+              <a href="{{post.bibtex}}">bibTeX</a> |
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -277,7 +274,7 @@
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding: 2.5%;width:100%;vertical-align:middle">
               <h2>Education</h2>
             </td>
           </tr>
@@ -287,14 +284,17 @@
           {% for cat in post.categories %}
           {% if cat == 'education' %}
           <tr>
-            <td style="padding:0 2.5% 0 2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
+            <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
               <img src="{{post.image}}" alt="logo image" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="width:94%;vertical-align:middle">
               <a href="{{post.titleurl}}"><h3>{{post.title}}</h3></a>
               {{ post.startdate | date: "%Y" }}-{{ post.enddate | date: "%Y" }}
               <br>
-              <em>Advisor: </em> {{post.advisor}}
+              <em>Advisor: </em> <a href="{{post.advisorurl}}">{{post.advisor}}</a>
+              &nbsp;
+              <br>
+              <em>Thesis: </em> <a href="{{post.thesisurl}}">{{post.thesis}}</a>
             </td>
           </tr>
           {% endif %}
