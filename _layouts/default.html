@@ -64,7 +64,68 @@
             </td>
           </tr>
         </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>News</h2>
+              <!-- <ul>
+                <li>Our work on learning preferences for canonical dish loading task using 
+                  <a href="https://openreview.net/forum?id=Eal_lL08v_l">Transformers Task Planner</a> is accepted at <a href="https://corl2022.org/">CoRL 2022</a>. 
+                </li>
+                <li>
+                  I am serving as a reviewer for ICLR, ICML and NeurIPS.
+                </li>
+                <details>
+                  <summary>See More</summary>
+                  <li>
+                    <strong>Heidelberg Laureate Forum Scholar 2020</strong>: Selected among 224 young researchers to meet laureates in the mathematics and computer science (postponed to Sep 2021); Participated in Virtual Heidelberg Laureate Forum 2020
+                  </li>
+                </details>
+              </ul>   -->
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'news' %}
+          {% if post.important == 'true' %}
+          <tr bgcolor={{post.highlight}}>
+            <ul>
+              <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>:   
+                {{post.summary}}
+              </li>
+            </ul>
+          </tr>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <details>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <summary>See more.</summary>
+            {% for post in site.posts %}
+            {% for cat in post.categories %}
+            {% if cat == 'news' %}
+            {% if post.important == '' or  post.important == 'false' %}
+            <tr bgcolor={{post.highlight}}>
+              <ul>
+                <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>:   
+                  {{post.summary}}
+                </li>
+              </ul>
+            </tr>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </table>
+        </details>
+        <br>
+        <br>
+        <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -226,7 +287,7 @@
           {% for cat in post.categories %}
           {% if cat == 'education' %}
           <tr>
-            <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
+            <td style="padding:0 2.5% 0 2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
               <img src="{{post.image}}" alt="logo image" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="width:94%;vertical-align:middle">
