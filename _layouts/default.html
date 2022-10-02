@@ -89,7 +89,7 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr bgcolor={{post.highlight}}>
-              <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
+            <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
               <img src="{{post.image}}" alt="project image" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black;width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:67%;vertical-align:middle"  align="left">
@@ -213,6 +213,33 @@
         </table>
         <br>
         <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Education</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'education' %}
+          <tr>
+            <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
+              <img src="{{post.image}}" alt="logo image" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="width:94%;vertical-align:middle">
+              <a href="{{post.titleurl}}"><h3>{{post.title}}</h3></a>
+              {{ post.startdate | date: "%Y" }}-{{ post.enddate | date: "%Y" }}
+              <br>
+              <em>Advisor: </em> {{post.advisor}}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
