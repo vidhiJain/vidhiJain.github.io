@@ -3,7 +3,7 @@ layout: post
 title:  "Learning to capture spatial semantic priors for indoor navigation"
 titleurl: https://arxiv.org/abs/2108.00159
 date:   2020-12-09 22:21:59 +00:00
-image: images/white_bg.png
+image: images/spatialpriors.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>, Shishir Patil, Prakhar Agarwal and Katia Sycara."

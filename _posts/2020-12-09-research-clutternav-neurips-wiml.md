@@ -3,7 +3,7 @@ layout: post
 title:  "Learning to navigate in unseen cluttered environments"
 titleurl: https://www.ri.cmu.edu/wp-content/uploads/2021/08/NeurIPS_WiML.pdf
 date:   2020-12-09 22:21:59 +00:00
-image: images/white_bg.png
+image: images/fourrooms.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>,  Ganesh Iyer and Katia Sycara."

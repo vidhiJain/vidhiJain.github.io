@@ -3,7 +3,7 @@ layout: post
 title:  "Transformers are Adaptable Task Planners"
 titleurl: https://sites.google.com/andrew.cmu.edu/ttp/home
 date:   2022-09-01 22:21:59 +00:00
-image: images/white_bg.png
+image: images/ttp.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>, Yixin Lin, Eric Undersander, Yonatan Bisk and Akshara Rai."

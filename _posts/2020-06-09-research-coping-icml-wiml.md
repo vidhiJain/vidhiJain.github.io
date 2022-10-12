@@ -3,7 +3,7 @@ layout: post
 title:  "Coping with sample inefficiency in deep reinforcement learning"
 titleurl: http://vidhijain.github.io/drl_with_robotics.pdf
 date:   2020-06-09 22:21:59 +00:00
-image: images/white_bg.png
+image: images/copingicmlunwiml.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>, Simin Liu, and Ganesh Iyer."

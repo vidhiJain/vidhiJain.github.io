@@ -3,7 +3,7 @@ layout: post
 title:  "Investigating the viability of Generative Models for Novelty Detection"
 titleurl: pdfs/Bachelor_Thesis_VidhiJain.pdf
 date:   2018-06-30 22:21:59 +00:00
-image: images/white_bg.png
+image: images/generativemodels.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>"

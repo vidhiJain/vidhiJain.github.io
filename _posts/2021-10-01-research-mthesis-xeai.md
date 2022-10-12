@@ -3,7 +3,7 @@ layout: post
 title:  "Towards Explainable Embodied AI"
 titleurl: https://www.ri.cmu.edu/publications/towards-explainable-embodied-ai/
 date:   2021-08-10 22:21:59 +00:00
-image: images/white_bg.png
+image: images/towardsXEAI.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>"

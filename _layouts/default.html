@@ -15,8 +15,6 @@
 
 </head>
 
-
-
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
@@ -69,6 +67,7 @@
             </td>
           </tr>
         </table>
+        <!-- News -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -84,7 +83,7 @@
           {% if post.important == 'true' %}
           <tr bgcolor={{post.highlight}}>
             <ul>
-              <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>:   
+              <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>, {{ post.date | date: "%Y" }}:   
                 {{post.summary}}
               </li>
             </ul>
@@ -105,7 +104,7 @@
             {% if post.important == '' or  post.important == 'false' %}
             <tr bgcolor={{post.highlight}}>
               <ul>
-                <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>:   
+                <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>, {{ post.date | date: "%Y" }}:   
                   {{post.summary}}
                 </li>
               </ul>
@@ -119,6 +118,7 @@
         <br>
         <br>
         <br>
+        <!-- Research  -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -142,8 +142,9 @@
           <tr bgcolor={{post.highlight}}>
             <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
               <img src="{{post.image}}" alt="project image" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black;width:auto; height:auto; max-width:100%;" />
-            </td>
+            </td> 
             <td style="padding:2.5%;width:67%;vertical-align:middle"  align="left">
+              <!-- <td style="padding:2.5%;width:100%;vertical-align:middle"  align="left"></td> -->
               <a href={{post.titleurl}}><h2>{{post.title}}</h2></a>
               <br><br>
               {{post.authors}}
@@ -165,9 +166,6 @@
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> |
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> |
               {% endif %}
               {% if post.tweet %}
               <a href="{{post.tweet}}">tweet</a> |
@@ -195,6 +193,7 @@
         <br>
         <br>
         <br>
+        <!-- Projects -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -272,6 +271,58 @@
         <br>
         <br>
         <br>
+        <!-- Talks -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Talks</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'talks' %}
+          {% if post.important == 'true' %}
+          <tr bgcolor={{post.highlight}}>
+            <ul>
+              <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>, {{ post.date | date: "%Y" }}:   
+                {{post.summary}}
+              </li>
+            </ul>
+          </tr>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <details>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <summary style="padding: 4px;width: 100%;background-color: #eeeeee;border: none;box-shadow: 1px 1px 2px #bbbbbb;cursor: pointer;">
+              <span style="text-align:center;"><em> Show more... </em></span>
+            </summary>
+            {% for post in site.posts %}
+            {% for cat in post.categories %}
+            {% if cat == 'talks' %}
+            {% if post.important == '' or  post.important == 'false' %}
+            <tr bgcolor={{post.highlight}}>
+              <ul>
+                <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>, {{ post.date | date: "%Y" }}:   
+                  {{post.summary}}
+                </li>
+              </ul>
+            </tr>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </table>
+        </details>
+        <br>
+        <br>
+        <br>
+        <!-- Education -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding: 2.5%;width:100%;vertical-align:middle">
@@ -279,6 +330,7 @@
             </td>
           </tr>
         </table>
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
@@ -301,8 +353,10 @@
           {% endfor %}
           {% endfor %}
         </table>
+        <!-- Credits -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
+            <hr>
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
