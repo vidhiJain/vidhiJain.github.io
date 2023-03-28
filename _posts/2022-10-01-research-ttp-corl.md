@@ -2,7 +2,7 @@
 layout: post
 title:  "Transformers are Adaptable Task Planners"
 titleurl: https://sites.google.com/andrew.cmu.edu/ttp/home
-date:   2022-09-01 22:21:59 +00:00
+date:   2022-10-01 22:21:59 +00:00
 image: images/ttp.gif
 categories: research
 author: "Vidhi Jain"
