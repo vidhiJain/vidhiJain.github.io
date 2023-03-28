@@ -6,7 +6,7 @@ date:   2022-09-30 22:21:59 +00:00
 image: images/maea.gif
 categories: research
 author: "Vidhi Jain"
-authors: "<strong>Vidhi Jain</strong>, Yixin Lin, Eric Undersander, Yonatan Bisk and Akshara Rai."
+authors: "<strong>Vidhi Jain</strong>, Jayant Sravan Tamarapalli, Sahiti Yerramilli, and Yonatan Bisk." 
 venue: "NeurIPS"
 highlight: ""
 webpage: "https://sites.google.com/andrew.cmu.edu/maea/home"
