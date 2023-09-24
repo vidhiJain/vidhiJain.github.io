@@ -3,7 +3,7 @@ layout: post
 title:  "HomeRobot: Open-Vocabulary Mobile Manipulation"
 titleurl: https://home-robot-ovmm.github.io
 date:   2023-06-01 22:21:59 +00:00
-image: images/ovmm.gif
+image: images/ovmm2.gif
 categories: research
 author: "Vidhi Jain"
 authors: "Sriram Yenamandra, Arun Ramachandran, Karmesh Yadav, Austin S Wang, Mukul Khanna, Theophile Gervet, Tsung-Yen Yang, <strong>Vidhi Jain</strong>, Alexander Clegg, John M Turner, Zsolt Kira, Manolis Savva, Angel X Chang, Devendra Singh Chaplot, Dhruv Batra, Roozbeh Mottaghi, Yonatan Bisk, Chris Paxton."

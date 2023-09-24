@@ -1,8 +1,8 @@
 ---
 layout: post
 categories: news
-date: 2023-09-01 22:21:59 +00:00
-title:  "HomeRobot Challenge at NeurIPS"
+date: 2023-06-01 22:21:59 +00:00
+title:  "HomeRobot Challenge at NeurIPS'23"
 titleurl: https://aihabitat.org/challenge/2023_homerobot_ovmm/
 important: "true"
 highlight: ""

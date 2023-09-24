@@ -85,9 +85,10 @@
           <tr bgcolor={{post.highlight}}>
               <details>
               <summary style="padding: 4px;width: 100%;background-color: #ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
-                <span style="text-align:center;">{{ post.date | date: "%B %Y" }}:<em> <a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a></em></span>
+                <span style="text-align:center;">{{ post.date | date: "%B %Y" }}: <em><strong>{{post.title}}</strong></em></span>
               </summary> 
-                {{post.summary}}
+              {{post.summary}}
+              <br>
               </details>
           </tr>
           {% endif %}
