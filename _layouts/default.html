@@ -77,11 +77,34 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'news' %}
           {% if post.important == 'true' %}
+          <tr>
+              <details>
+              <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
+                <span style="text-align:center;background-color:{{post.highlight}};">{{ post.date | date: "%B %Y" }}: <em><strong>{{post.title}}</strong></em></span>
+
+              </summary> 
+              {{post.summary}}
+              <br>
+              </details>
+          </tr>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <details>
+          <summary style="padding: 4px;width: 100%;background-color: #ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
+            <span style="text-align:center;"><em> Show more ... </em></span>
+          </summary>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'news' %}
+          {% if post.important == '' %}
           <tr bgcolor={{post.highlight}}>
               <details>
               <summary style="padding: 4px;width: 100%;background-color: #ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
@@ -96,6 +119,7 @@
           {% endfor %}
           {% endfor %}
         </table>
+      </details>
         <br>
         <br>
         <br>
@@ -189,11 +213,13 @@
           {% if cat == 'talks' %}
           {% if post.important == 'true' %}
           <tr bgcolor={{post.highlight}}>
-            <ul>
-              <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>, {{ post.date | date: "%Y" }}:   
-                {{post.summary}}
-              </li>
-            </ul>
+            <details>
+              <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
+                <span style="text-align:center;background-color:{{post.highlight}};">{{ post.date | date: "%B %Y" }}: <em><strong>{{post.title}}</strong></em></span>
+
+              </summary> 
+              {{post.summary}}
+            </details>
           </tr>
           {% endif %}
           {% endif %}
@@ -202,19 +228,20 @@
         </table>
         <details>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <summary style="padding: 4px;width: 100%;background-color: #eeeeee;border: none;box-shadow: 1px 1px 2px #bbbbbb;cursor: pointer;">
-              <span style="text-align:center;"><em> Show more... </em></span>
+            <summary style="padding: 4px;width: 100%;background-color: #ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
+              <span style="text-align:center;"><em> Show more ... </em></span>
             </summary>
             {% for post in site.posts %}
             {% for cat in post.categories %}
             {% if cat == 'talks' %}
             {% if post.important == '' or  post.important == 'false' %}
             <tr bgcolor={{post.highlight}}>
-              <ul>
-                <li><a href="{{post.titleurl}}"><strong>{{post.title}}</strong></a>, {{ post.date | date: "%Y" }}:   
-                  {{post.summary}}
-                </li>
-              </ul>
+              <details>
+                <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
+                  <span style="text-align:center;background-color:{{post.highlight}};">{{ post.date | date: "%B %Y" }}: <em><strong>{{post.title}}</strong></em></span>
+                </summary> 
+                {{post.summary}}
+              </details>
             </tr>
             {% endif %}
             {% endif %}

@@ -10,7 +10,7 @@ authors: "<strong>Vidhi Jain</strong>, Jayant Sravan Tamarapalli, Sahiti Yerrami
 venue: "NeurIPS"
 highlight: ""
 webpage: "https://sites.google.com/andrew.cmu.edu/maea/home"
-arxiv: https://openreview.net/forum?id=OUs2us5Xhx
+arxiv: https://arxiv.org/abs/2307.13850
 reviews: https://openreview.net/forum?id=OUs2us5Xhx
 video: https://slideslive.com/38993454/mafea-multimodal-attribution-framework-for-embodied-ai?ref=search-presentations-VIDHI+JAIN
 # poster: ""
