@@ -2,8 +2,8 @@
 layout: post
 categories: news
 date: 2022-08-10 22:21:59 +00:00
-title:  "CoRL paper accepted"
-titleurl: https://doi.org/10.1145/3027063.3048417
+title:  "Transformers Task Planners accepted at CoRL"
+titleurl: https://openreview.net/forum?id=Eal_lL08v_l
 important: "true"
 highlight: ""
 summary: Our work on learning preferences for canonical dish loading task using 
