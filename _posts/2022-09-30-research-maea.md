@@ -7,7 +7,7 @@ image: images/maea.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>, Jayant Sravan Tamarapalli, Sahiti Yerramilli, and Yonatan Bisk." 
-venue: "NeurIPS"
+venue: "NeurIPS Workshop on Trustworthy Embodied AI"
 highlight: ""
 webpage: "https://sites.google.com/andrew.cmu.edu/maea/home"
 arxiv: https://arxiv.org/abs/2307.13850
