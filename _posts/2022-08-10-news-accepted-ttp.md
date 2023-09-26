@@ -5,7 +5,7 @@ date: 2022-09-10 22:21:59 +00:00
 title:  "Transformers Task Planners accepted at CoRL'22"
 titleurl: https://openreview.net/forum?id=Eal_lL08v_l
 important: "true"
-highlight: "#ffffd0"
+highlight: "" #ffffd0"
 summary: Our work on learning preferences for canonical dish loading task using 
                   <a href="https://openreview.net/forum?id=Eal_lL08v_l">Transformers Task Planner</a> is accepted at <a href="https://corl2022.org/">CoRL 2022</a>. Read more <a href='https://twitter.com/viddivj/status/1603161666325446657'>here</a>. 
                   <br><br> 
