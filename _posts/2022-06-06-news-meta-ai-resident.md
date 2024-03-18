@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: news
-date: 2022-10-06 22:21:59 +00:00
+date: 2022-06-06 22:21:59 +00:00
 title:  "Blogpost on AI residents at Meta"
 titleurl: ""
 important: "true"
