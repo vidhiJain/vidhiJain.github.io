@@ -10,7 +10,7 @@ authors: "Debidatta Dwibedi, Vidhi Jain, Jonathan Tompson, Andrew Zisserman, Yus
 venue: "Preprint" #""
 highlight: ""
 webpage: "https://flex-cap.github.io/"
-arxiv: 
+arxiv: https://arxiv.org/abs/2403.12026
 video: 
 reviews: 
 # slides: ""

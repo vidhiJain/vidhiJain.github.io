@@ -10,7 +10,7 @@ authors: "Vidhi Jain, Maria Attarian, Nikhil J Joshi Ayzaan Wahid, Danny Driess,
 venue: "Preprint"  #""
 highlight: "#ffffd0"    
 webpage: "https://vid2robot.github.io/"
-arxiv: https://vid2robot.github.io/vid2robot.pdf
+arxiv: http://arxiv.org/abs/2403.12943
 video: 
 reviews: 
 # slides: ""
