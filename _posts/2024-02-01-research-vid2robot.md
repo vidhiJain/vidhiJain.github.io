@@ -7,7 +7,7 @@ image: images/vid2robot.gif
 categories: research
 author: "Vidhi Jain"
 authors: "Vidhi Jain, Maria Attarian, Nikhil J Joshi Ayzaan Wahid, Danny Driess, Quan Vuong, Pannag R Sanketi, Pierre Sermanet, Stefan Welker, Christine Chan, Igor Gilitschenski, Yonatan Bisk, Debidatta Dwibedi."
-venue: "Preprint"  #""
+venue: "20th Edition of Robotics: Science and Systems (RSS) Conference"  #""
 highlight: "#ffffd0"    
 webpage: "https://vid2robot.github.io/"
 arxiv: http://arxiv.org/abs/2403.12943
