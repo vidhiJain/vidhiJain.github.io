@@ -2,7 +2,7 @@
 layout: post
 categories: news
 date: 2024-09-04 00:21:59 +00:00
-title:  "ANAVI accepted at CoRL 2024."
+title:  "ANAVI accepted at CoRL'24."
 titleurl: 
 important: "true"
 highlight: "" #ffffd0"
