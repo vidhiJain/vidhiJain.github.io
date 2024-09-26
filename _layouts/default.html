@@ -13,22 +13,70 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <script>
-    function copyDivToClipboard(idx) {
-        var range = document.createRange();
-        range.selectNode(document.getElementById(idx));
-        window.getSelection().removeAllRanges(); // clear current selection
-        window.getSelection().addRange(range); // to select text
-        document.execCommand("copy");
-        $('[id="button' + idx + '"]').attr('data-original-title', "Copied!").tooltip('show')
-        window.getSelection().removeAllRanges();// to deselect
+    function toggleBibTeX(id) {
+      var bibtex = document.getElementById('bibtex-container-' + id);
+      var button = document.getElementById('copy-' + id);
+      if (bibtex.style.display === "none") {
+        bibtex.style.display = "block";
+        button.style.display = "inline-block";
+      } else {
+        bibtex.style.display = "none";
+        button.style.display = "none";
+      }
+    }
+    function copyBibTeX(id) {
+      var bibtexContent = document.getElementById('bibtex-content-' + id).innerText;
+      navigator.clipboard.writeText(bibtexContent).then(function() {
+        var feedback = document.getElementById('feedback-' + id);
+        var copyButton = document.getElementById('copy-' + id);
+        copyButton.style.display = 'none';
+        feedback.style.display = 'inline-block';
+        setTimeout(function() {
+          feedback.style.display = 'none';
+          copyButton.style.display = 'inline-block';
+        }, 2000);
+      }, function(err) {
+        console.error('Could not copy text: ', err);
+      });
     }
   </script>
-  <script language="javascript">
-    function show( elem ) {
-        $('#'+elem).toggle();
-        copyDivToClipboard(elem);
-    }
-  </script>
+  <style>
+  .copy-button {
+    position: relative;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+  .copy-feedback {
+    display: none;
+    position: relative;
+    top: 5px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  .bibtex-container {
+    display: none;
+    max-width: 100%;
+    overflow-x: auto;
+    word-wrap: normal;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1em;
+    margin-top: 1em;
+  }
+</style>
+
 </head>
 
 <body>
@@ -98,8 +146,10 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
+          {% assign years_ago = site.time | date: "%Y" | minus: 1 %}
+          {% assign current_year = post.date | date: "%Y" | plus: 0 %}
           {% if cat == 'news' %}
-          {% if post.important == 'true' %}
+          {% if  current_year >= years_ago %}
           <tr>
               <details>
               <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
@@ -122,8 +172,10 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
+          {% assign years_ago = site.time | date: "%Y" | minus: 1 %}
+          {% assign current_year = post.date | date: "%Y" | plus: 0 %}
           {% if cat == 'news' %}
-          {% if post.important == '' %}
+          {% if  current_year < years_ago %}
           <tr bgcolor={{post.highlight}}>
               <details>
               <summary style="padding: 4px;width: 100%;background-color: #ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
@@ -204,14 +256,24 @@
               <a href="{{post.poster}}">poster</a> |
               {% endif %}
               {% if post.bibtex %}
-              <a href="{{post.bibtex}}">BibTeX</a>
-              <!-- <a class="sbtn" title
-                data-original-title="Copy BibTex" id="buttonidx{{forloop.index}}" onclick="show('idx{{forloop.index }}')">
-                BibTeX
-              </a>
-              <div id="idx{{forloop.index}}"  class="dynamic_link">
-                 <pre>{{post.bibtex}}</pre>
-              </div> -->
+              <!-- <a href="{{post.bibtex}}">BibTeX</a> -->
+              {% assign parts = post.bibtex | split: '/' %}
+              {% assign research_name = parts | last %}
+              {% if research_name contains '.bib' %}
+              {% assign research_name = research_name | replace: '.bib', '' %}
+              {% endif %}
+              <a href="#" onclick="toggleBibTeX('{{ research_name }}'); return false;">Show BibTeX</a>
+              <div class='bibtex-container' id="bibtex-container-{{ research_name }}" style="display: none;">
+                <code id="bibtex-content-{{ research_name }}">
+                  {%- capture bibtex -%}
+                  {%- include_relative {{ post.bibtex }} -%}
+                  {%- endcapture -%}
+                  {{- bibtex | strip_html | strip | newline_to_br | strip_newlines  -}}        
+                </code>
+                <br>
+                <button class="copy-button" id="copy-{{ research_name }}" onclick="copyBibTeX('{{ research_name }}')">Copy</button>
+                <span class="copy-feedback" id="feedback-{{ research_name }}">Copied!</span>
+              </div>
               {% endif %}
               <p></p>
               {{ post.excerpt }}

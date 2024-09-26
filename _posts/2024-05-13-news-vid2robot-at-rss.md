@@ -2,11 +2,11 @@
 layout: post
 categories: news
 date: 2024-05-13 00:21:59 +00:00
-title:  "Vid2Robot is accepted at Robotics: Science and Systems 2024."
+title:  "Vid2Robot accepted at RSS'24."
 titleurl: https://openreview.net/forum?id=Eal_lL08v_l
 important: "true"
 highlight: "" #ffffd0"
-summary: 'Vid2Robot is now accepted at RSS 2024. 
+summary: 'Vid2Robot accepted at Robotics: Science and Systems 2024. 
 <br>
 <ul>
 <li><strong>Vid2Robot</strong>, a novel end-to-end conditioned robot policy with Cross Attention. 
