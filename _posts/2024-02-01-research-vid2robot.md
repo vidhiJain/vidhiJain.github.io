@@ -11,7 +11,7 @@ venue: "20th Edition of Robotics: Science and Systems (RSS) Conference"  #""
 highlight: "#ffffd0"    
 webpage: "https://vid2robot.github.io/"
 arxiv: http://arxiv.org/abs/2403.12943
-video: 
+video: https://youtu.be/qqdu5qTMR7o?t=2394
 reviews: 
 # slides: ""
 code: 

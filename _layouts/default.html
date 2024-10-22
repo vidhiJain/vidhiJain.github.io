@@ -146,14 +146,14 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% assign years_ago = site.time | date: "%Y" | minus: 1 %}
+          {% assign years_ago = site.time | date: "%Y" | minus: 0 %}
           {% assign current_year = post.date | date: "%Y" | plus: 0 %}
           {% if cat == 'news' %}
           {% if  current_year >= years_ago %}
           <tr>
               <details>
               <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
-                <span style="text-align:center;background-color:{{post.highlight}};"><em>{{ post.date | date: "%B %Y" }}</em>, <h3>{{post.title}}</h3></span>
+                <span style="text-align:center;"><em>{{ post.date | date: "%B %Y" }}</em>, <h3>{{post.title}}</h3></span>
 
               </summary> 
               {{post.summary}}
@@ -172,7 +172,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% assign years_ago = site.time | date: "%Y" | minus: 1 %}
+          {% assign years_ago = site.time | date: "%Y" | minus: 0 %}
           {% assign current_year = post.date | date: "%Y" | plus: 0 %}
           {% if cat == 'news' %}
           {% if  current_year < years_ago %}
@@ -300,11 +300,10 @@
           {% for cat in post.categories %}
           {% if cat == 'talks' %}
           {% if post.important == 'true' %}
-          <tr bgcolor={{post.highlight}}>
+          <tr>
             <details>
               <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
-                <span style="text-align:center;background-color:{{post.highlight}};"><em>{{ post.date | date: "%B %Y" }}</em>, <h3>{{post.title}}</h3></span>
-
+                <span style="text-align:center;"><em>{{ post.date | date: "%B %Y" }}</em>, <h3><a href="{{post.titleurl}}">{{post.title}}</a></h3></span>
               </summary> 
               {{post.summary}}
             </details>
@@ -323,10 +322,10 @@
             {% for cat in post.categories %}
             {% if cat == 'talks' %}
             {% if post.important == '' or  post.important == 'false' %}
-            <tr bgcolor={{post.highlight}}>
+            <tr>
               <details>
                 <summary style="padding: 4px;width: 100%;background-color:#ffffff;border: none;box-shadow: 1px 1px 2px #ffffff;cursor: pointer;">
-                  <span style="text-align:center;background-color:{{post.highlight}};"><em>{{ post.date | date: "%B %Y" }}</em>, <h3>{{post.title}}</h3></span>
+                  <span style="text-align:center;"><em>{{ post.date | date: "%B %Y" }}</em>, <h3><a href="{{post.titleurl}}">{{post.title}}</a></h3></span>
                 </summary> 
                 {{post.summary}}
               </details>
