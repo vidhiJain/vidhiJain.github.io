@@ -7,10 +7,10 @@ image: images/length_conditioning.png
 categories: research
 author: "Vidhi Jain"
 authors: "Debidatta Dwibedi, Vidhi Jain, Jonathan Tompson, Andrew Zisserman, Yusuf Aytar."
-venue: "Preprint" #""
-highlight: ""
+venue: "NeurIPS" #""
+highlight: "#ffffd0"
 webpage: "https://flex-cap.github.io/"
-arxiv: 
+arxiv: https://openreview.net/forum?id=P5dEZeECGu
 video: 
 reviews: 
 # slides: ""
