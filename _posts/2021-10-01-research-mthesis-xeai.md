@@ -7,7 +7,7 @@ image: images/towardsXEAI.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>"
-venue: Masters thesis
+venue: <a href="https://www.ri.cmu.edu/publications/towards-explainable-embodied-ai/"> Masters thesis </a>
 highlight:  "#ffffd0"
 # webpage: "https://sites.google.com/andrew.cmu.edu/ttp/home"
 # arxiv: https://arxiv.org/abs/2207.02442

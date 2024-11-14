@@ -7,7 +7,7 @@ image: images/ovmm2.gif
 categories: research
 author: "Vidhi Jain"
 authors: "Sriram Yenamandra, Arun Ramachandran, Karmesh Yadav, Austin S Wang, Mukul Khanna, Theophile Gervet, Tsung-Yen Yang, <strong>Vidhi Jain</strong>, Alexander Clegg, John M Turner, Zsolt Kira, Manolis Savva, Angel X Chang, Devendra Singh Chaplot, Dhruv Batra, Roozbeh Mottaghi, Yonatan Bisk, Chris Paxton."
-venue: "7th Annual Conference on Robot Learning (CoRL)"
+venue: <a href="https://www.corl2023.org/">7th Annual Conference on Robot Learning (CoRL)</a>
 highlight: "#ffffff"
 webpage: "https://home-robot-ovmm.github.io"
 arxiv: https://arxiv.org/abs/2306.11565

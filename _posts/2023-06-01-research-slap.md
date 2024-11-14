@@ -7,7 +7,7 @@ image: images/slap.gif
 categories: research
 author: "Vidhi Jain"
 authors: Priyam Parasher, <strong>Vidhi Jain</strong>, Xiaohan Zhang, Jay Vakil, Sam Powers, Yonatan Bisk and Chris Paxton.
-venue: "7th Annual Conference on Robot Learning (CoRL)"
+venue: <a href="">7th Annual Conference on Robot Learning (CoRL)</a>
 highlight: "#ffffd0"
 webpage: "https://robotslap.github.io/"
 arxiv: https://arxiv.org/abs/2304.11235

@@ -7,7 +7,7 @@ image: images/factorbase.jpeg
 categories: research
 author: "Vidhi Jain"
 authors: "Sajjad Gholami, Oliver Schulte, <strong>Vidhi Jain</strong>, Qiang Zhao."
-venue: IJCAI Declarative Learning Based Programming (DeLBP)
+venue: <a href="https://delbp.github.io/DeLBP-2017/">IJCAI Declarative Learning Based Programming (DeLBP) </a>
 highlight: ""
 # webpage: "https://sites.google.com/andrew.cmu.edu/ttp/home"
 # arxiv: https://arxiv.org/abs/2011.07656

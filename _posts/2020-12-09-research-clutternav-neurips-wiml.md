@@ -7,7 +7,7 @@ image: images/fourrooms.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>,  Ganesh Iyer and Katia Sycara."
-venue: <a href='https://arxiv.org/html/2012.02108'>NeurIPS Women in Machine Learning workshop (WiML)</a>
+venue: <a href='https://docs.google.com/document/d/1IjXdrZ3aixPA-xIpv70nuljPUnecYoW0kLIjMBQzv-8/preview?fbclid=IwAR1g4rtstSZCZQmoa_WXzixapG-XwK2hnat0q9-qWOGIZDTL5UloGDz4Z-4&tab=t.0'>NeurIPS Women in Machine Learning workshop (WiML)</a>
 highlight: ""
 # webpage: "https://sites.google.com/andrew.cmu.edu/ttp/home"
 # arxiv: https://arxiv.org/abs/2011.07656

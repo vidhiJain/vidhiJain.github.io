@@ -7,7 +7,7 @@ image: images/ttp.gif
 categories: research
 author: "Vidhi Jain"
 authors: "<strong>Vidhi Jain</strong>, Yixin Lin, Eric Undersander, Yonatan Bisk and Akshara Rai."
-venue: "6th Annual Conference on Robot Learning (CoRL)"
+venue: <a href="https://corl2022.org/"> 6th Annual Conference on Robot Learning (CoRL)</a>
 highlight: "#ffffd0"
 webpage: "https://sites.google.com/andrew.cmu.edu/ttp/home"
 arxiv: https://arxiv.org/abs/2207.02442
